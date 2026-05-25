@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 N = []
 T = []
 
-with open(r"E:\Parallel_Programming\lab_1\multiple\timing\time_log.txt") as f:
+with open(r"E:\Parallel_Programming\lab_1\lab_2_mpi\multiple\timing_omp\time_log1.txt") as f:
     for line in f:
         line = line.strip()
 
@@ -15,7 +15,7 @@ with open(r"E:\Parallel_Programming\lab_1\multiple\timing\time_log.txt") as f:
         if len(parts) != 2:
             continue
 
-        n, t = parts
+        n, th, t = parts
         N.append(int(n))
         T.append(float(t))
 
